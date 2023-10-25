@@ -18,7 +18,7 @@ btn.addEventListener('click',()=>
     }
     else
     {
-        alert('field is balck..!');
+        alert('Field is blank..!');
     }
 });
 cls.addEventListener('click',()=>

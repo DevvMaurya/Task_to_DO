@@ -46,8 +46,12 @@ input:active
 button
 {
     width: auto;
+    cursor: pointer;
 }
-
+button:active
+{
+    background-color: greenyellow;
+}
 .box
 {
     height:fit-content;
@@ -66,6 +70,7 @@ button
 {
     background-color: rgba(248, 46, 46, 0.63);
     color: wheat;
+    cursor: pointer;
 }
 label
 {

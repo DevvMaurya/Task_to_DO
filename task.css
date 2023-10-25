@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 body
 {
@@ -11,6 +12,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: rgb(111,196,245);
     background: linear-gradient(90deg, rgba(111,196,245,1) 45%, rgba(94,134,219,1) 100%);
 }
@@ -64,4 +66,27 @@ button
 {
     background-color: rgba(248, 46, 46, 0.63);
     color: wheat;
+}
+label
+{
+    position:fixed;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    font-size: 5vh;
+    color: transparent;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: wheat;
+    text-transform:uppercase;
+}
+li
+{
+    cursor: pointer;
+}
+ol
+{
+    font-size: 18px;
 }

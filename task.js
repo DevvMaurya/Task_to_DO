@@ -7,14 +7,14 @@ let counter = 0;
 
 btn.addEventListener('click',()=>
 {
-    if(value.value != null)
+    if(value.value != '')
     {
         counter ++;
-        box_data.innerHTML += `<li>${value.value}</li>`;
+        box_data.innerHTML += `<li id='${counter}' onclick='remove(${counter})'>${value.value}</li>`;
         count.innerText = counter;
         console.log(value.value);
         console.log(counter);
-        value.value = ' '
+        value.value = ''
     }
     else
     {
@@ -28,3 +28,9 @@ cls.addEventListener('click',()=>
     counter = 0
 
 });
+
+function remove(number)
+{
+    let strike = document.getElementById(number);
+    strike.style.textDecoration = 'line-through';
+}

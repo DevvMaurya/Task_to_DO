@@ -48,6 +48,6 @@ function remove(number)
             box_data.innerHTML += `<li id='${i}' onclick='remove(${i})'>${localStorage.getItem(i)}</li>`;
             // console.log(localStorage.getItem(i))
         }
-    
+        count.innerText = localStorage.getItem(stotageCount);
     });
 

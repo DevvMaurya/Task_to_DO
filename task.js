@@ -45,7 +45,7 @@ function remove(number)
     {
         for(let i =1; i<=Number(localStorage.getItem(stotageCount)); i++)
         {
-            box_data.innerHTML = localStorage.getItem(i);
+            box_data.innerHTML += `<li id='${i}' onclick='remove(${i})'>${localStorage.getItem(i)}</li>`;
             // console.log(localStorage.getItem(i))
         }
     

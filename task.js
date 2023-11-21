@@ -10,10 +10,7 @@ btn.addEventListener('click',()=>
 {
     if(value.value != '')
     {
-        // if(stotageCount != null)
-        // {
-        //     counter = (localStorage.getItem(stotageCount));
-        // }
+        
         counter ++;
         box_data.innerHTML += `<li id='${counter}' onclick='remove(${counter})'>${value.value}</li>`;
         count.innerText = counter;

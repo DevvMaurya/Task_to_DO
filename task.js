@@ -3,13 +3,17 @@ let btn = document.querySelector('button');
 let value = document.querySelector('input');
 let count = document.getElementById('show_count')
 let cls = document.getElementById('clr');
-let counter = 0;
 let stotageCount = 9999;
+let counter = Number(localStorage.getItem(stotageCount));
 
 btn.addEventListener('click',()=>
 {
     if(value.value != '')
     {
+        // if(stotageCount != null)
+        // {
+        //     counter = (localStorage.getItem(stotageCount));
+        // }
         counter ++;
         box_data.innerHTML += `<li id='${counter}' onclick='remove(${counter})'>${value.value}</li>`;
         count.innerText = counter;
@@ -31,6 +35,7 @@ cls.addEventListener('click',()=>
     count.innerText = 0;
     counter = 0;
     localStorage.clear();
+    stotageCount = 0;
 });
 
 function remove(number)
